@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dexter Mini Market</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(90deg,#173bff,#7d2cff);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo{
+    width:280px;
+    max-width:90%;
+    border-radius:20px;
+    margin-bottom:20px;
+    filter: drop-shadow(0 6px 15px rgba(0,0,0,0.3));
+}
+
+header h1{
+    font-size:3rem;
+    margin:0;
+    word-wrap: break-word;
+}
+
+header p{
+    font-size:1.2rem;
+    margin:10px 0 0 0;
+}
+
+.call-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#5a32ff;
+    padding:15px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.call-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.section{
+    padding:50px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #173bff;
+    border-bottom: 3px solid #7d2cff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #173bff;
+}
+
+.card-price {
+    color: #7d2cff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.location{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    margin-top:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.location h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.location p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.hours {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #7d2cff;
+}
+
+.hours h4 {
+    color: #173bff;
+    margin: 10px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.hours p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.hours-note {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin: 0 0 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .call-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <img src="dexter-logo.png" class="logo" alt="Dexter Mini Market Logo">
+
+    <h1>Dexter Mini Market</h1>
+    <p>Fresh Pastelitos • Quipes • Neighborhood Favorites</p>
+
+    <a class="call-btn" href="tel:+14015213232">
+        📞 Call To Order
+    </a>
+
+</header>
+
+<section class="section">
+    <h2>Popular Items</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1200&auto=format&fit=crop" alt="Fresh Pastelitos">
+            <div class="card-content">
+                <h3>Fresh Pastelitos</h3>
+                <div class="card-price">$1.25</div>
+                <p>Hot and crispy Dominican pastelitos made fresh daily.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Quipes">
+            <div class="card-content">
+                <h3>Quipes</h3>
+                <div class="card-price">$2.25</div>
+                <p>Delicious crispy Dominican quipes stuffed with seasoned beef.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Fresh Fritura</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1612874742237-6526221fcf4f?q=80&w=1200&auto=format&fit=crop" alt="Salami con Tostones">
+            <div class="card-content">
+                <h3>Salami con Tostones</h3>
+                <div class="card-price">$10.99 - $13.99</div>
+                <p>Crispy fried Dominican salami served with golden tostones.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc687?q=80&w=1200&auto=format&fit=crop" alt="Alitas con Tostones">
+            <div class="card-content">
+                <h3>Alitas con Tostones</h3>
+                <div class="card-price">$10.99 - $13.99</div>
+                <p>Crispy fried chicken wings served with golden tostones.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd64b11?q=80&w=1200&auto=format&fit=crop" alt="Longaniza con Tostones">
+            <div class="card-content">
+                <h3>Longaniza con Tostones</h3>
+                <div class="card-price">$10.99 - $13.99</div>
+                <p>Spicy Dominican sausage served with golden tostones.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Visit Us</h2>
+
+    <div class="location">
+        <h3>Dexter Mini Market</h3>
+        <p>331 Dexter St, Providence, RI 02907</p>
+        <p>📞 <a href="tel:+14015213232" style="color: #5a32ff; text-decoration: none;">(401) 521-3232</a></p>
+        
+        <div class="hours">
+            <h4>Store Hours</h4>
+            <p><strong>Monday – Saturday:</strong> 6:30 AM – 8:00 PM</p>
+            <p><strong>Sunday:</strong> 9:00 AM – 6:00 PM</p>
+            <p class="hours-note">(Hours may vary on holidays)</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>Dexter Mini Market</h3>
+    <p>Good Food. Good Neighbors.</p>
+</footer>
+
+</body>
+</html>
